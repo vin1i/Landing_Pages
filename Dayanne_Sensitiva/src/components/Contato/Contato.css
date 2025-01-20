@@ -1,0 +1,229 @@
+.card__container-contato {
+  display: flex;
+  gap: 20px; /* Espaçamento entre os card__contatos */
+  justify-content: center;
+}
+
+.card__contato {
+  display: flex; /* Alteração para permitir o alinhamento flexível da imagem e informações */
+  max-width: 1920px; /* Ajuste conforme necessário */
+  width: 100%;
+  align-items: stretch;
+  /* Adicione uma borda para destacar os card__contatos */
+  /* Adicione sombra para destacar os card__contatos */
+}
+
+.contato__image {
+  overflow: hidden;
+  width: 50%;
+  margin-top: 4rem;
+  margin-left: 15%;
+}
+.title__contato {
+  position: relative;
+}
+.title__contato::before {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 2px;
+  background-color: #96080c;
+  left: 1%;
+  top: 95%;
+  transform: translateY(-50%);
+}
+.banner-img {
+  width: 100%;
+  max-width: 350px;
+
+  margin: 0 auto;
+  display: block;
+}
+.nav__icon-contato {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 2.6rem;
+  margin: 0.8rem;
+  margin-top: 2rem;
+  transition: color 0.3s ease;
+}
+
+/* .adress {
+} */
+.adress-p {
+  width: 50%;
+  margin-bottom: 2rem;
+  text-align: flex-start;
+}
+.nav__icon-contato:hover {
+  color: #96080c;
+}
+.information-contato {
+  background-color: #ffffff;
+  flex-grow: 1; /* Ocupa o restante do espaço disponível ao lado da imagem */
+  padding: 60px; /* Espaçamento interno do conteúdo do card__contato */
+
+  width: 50%; /* Define quanto as informações ocupam 50% do card__contato */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  flex-direction: column; /* Adicionado para garantir que os elementos se alinhem verticalmente */
+}
+
+.information-contato h1 {
+  font-size: 5rem;
+  width: 450px;
+  margin-top: 2rem;
+  font-weight: bolder;
+  text-align: flex-start;
+}
+
+.information-contato p {
+  margin-top: 2rem;
+
+  /* margin: 0; REMOVE AS MARGENS SE NECESSÁRIO */
+  font-size: 1.5rem;
+  text-align: flex-start;
+}
+.email-container {
+  margin-bottom: 2rem;
+}
+/*-------------------STYLE BUTTON----------------------------------*/
+.email:hover {
+  color: #96080c;
+}
+.link__contato {
+  color: #ffffff;
+}
+.information-contato button {
+  font-family: "Poppins", sans-serif;
+  margin-top: 30px; /* Espaçamento entre o parágrafo e o botão */
+  padding: 10px 15px; /* Adapte conforme necessário */
+  background-color: #96080c; /* Cor de fundo do botão */
+  color: white; /* Cor do texto do botão */
+  font-size: 2rem; /* Tamanho do texto do botão */
+  border-radius: 20px;
+  font-weight: bolder;
+  border: none; /* Remover a borda padrão do botão */
+  cursor: pointer;
+  max-width: 170px; /* Largura máxima do botão */
+  width: 100%;
+  transition: transform 0.3s, background-color 0.1s;
+}
+
+.information-contato button:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+}
+/*-------------------STYLE BUTTON----------------------------------*/
+/*--------------------------------BREAKPOINTS-------------------------------------*/
+
+@media screen and (max-width: 1790px) {
+  .information-contato h1 {
+    font-size: 3rem;
+    width: 400px;
+    margin-top: -2rem;
+    font-weight: bolder;
+  }
+
+  .information-contato li {
+    /* margin-top: 0.8rem; */
+    margin: 0; /*REMOVE AS MARGENS SE NECESSÁRIO */
+    font-size: 2rem;
+    width: 400px;
+    font-weight: bolder;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .title__contato::before {
+    position: absolute;
+    content: "";
+    width: 6%;
+    left: auto;
+  }
+  .card__contato {
+    flex-direction: column;
+    text-align: center;
+    border: none;
+  }
+
+  .adress {
+    padding: 0;
+  }
+  .banner-img {
+    width: 100%;
+    max-width: 250px;
+
+    margin-top: 5rem;
+    display: block;
+  }
+  .contato__image {
+    width: 100%;
+    border-radius: 5px;
+    margin: 0;
+  }
+  .banner-img {
+    width: 100%;
+    display: block;
+  }
+  .information-contato button {
+    width: 100%;
+    font-size: 1.5rem;
+    margin: auto;
+  }
+  .adress-p {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .email {
+    margin-bottom: 0.5rem;
+  }
+
+  .information-contato {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin-top: -1rem;
+    gap: 2rem;
+  }
+
+  .information-contato h1,
+  .information-contato li {
+    width: 100%;
+    max-width: none;
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .title__contato::before {
+    position: absolute;
+    content: "";
+    width: 10%;
+    left: auto;
+  }
+}
+@media screen and (max-width: 578px) {
+  .title__contato::before {
+    position: absolute;
+    content: "";
+    width: 20%;
+    left: auto;
+  }
+}
+@media screen and (max-width: 350px) {
+  .information-contato h1,
+  .information-contato p {
+    width: 100%;
+  }
+
+  .information-contato h1 {
+    font-size: 2rem;
+  }
+
+  .information-contato li {
+    font-size: 1.5rem;
+  }
+}

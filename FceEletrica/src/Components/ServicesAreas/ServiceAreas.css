@@ -1,0 +1,158 @@
+/* ServiceAreas.css */
+.electrical-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Adicione essa linha para centralizar verticalmente */
+  max-width: 100%;
+  margin: 0 auto; /* Adicione essa linha para centralizar horizontalmente */
+}
+
+.service-section {
+  padding: 2rem;
+  margin-bottom: 10rem;
+  justify-content: center;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  font-size: 2rem;
+}
+
+.service-section.reverse {
+  flex-direction: row-reverse;
+}
+/* ServiceAreas.css */
+.service-content-about {
+  align-items: center;
+}
+.service-content-about h2 {
+  margin-bottom: 10px;
+  margin-top: 50px;
+  font-size: 4rem;
+  position: relative;
+}
+
+.service-content-about h2::after {
+  content: ""; /* Adiciona conteúdo ao pseudo-elemento */
+  position: absolute; /* Define posição absoluta para o pseudo-elemento */
+  bottom: -5px; /* Posiciona o sublinhado abaixo do texto */
+  left: 0; /* Alinha o sublinhado com o início do texto */
+  width: 60px; /* Largura do sublinhado */
+  height: 3px; /* Altura do sublinhado */
+  background-color: #000; /* Cor do sublinhado (pode ser ajustada conforme necessário) */
+}
+.service-content-about ul {
+  list-style-type: none;
+  padding: 0;
+}
+.service-content-about ul li {
+  margin-bottom: 5px;
+}
+
+.service-content-about p {
+  width: 100%;
+  max-width: 900px;
+  font-size: 2.5rem;
+}
+.service-image {
+  width: 50%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.service-content {
+  flex: 1;
+}
+
+.service-content h2 {
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+.service-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.service-content ul li {
+  margin-bottom: 5px;
+}
+
+/* Adicionando um estilo para colar a descrição na imagem */
+.service-section .service-content,
+.service-section.reverse .service-content {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media (max-width: 992px) {
+  .service-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .service-section.reverse {
+    flex-direction: column;
+  }
+  .service-content {
+    text-align: start;
+  }
+  .service-image {
+    width: 100%;
+    max-width: 100%;
+  }
+  .service-image_about {
+    width: 100%;
+    max-width: 100%;
+  }
+  .service-content-about h2 {
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-size: 4rem;
+  }
+  .service-content h2 {
+    margin-bottom: 10px;
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .service-section.reverse {
+    flex-direction: column;
+  }
+  .service-content {
+    text-align: start;
+  }
+  .service-image {
+    width: 100%;
+    max-width: 100%;
+  }
+  .service-content-about p {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .service-content-about h2 {
+    margin-bottom: 30px;
+    margin-top: 0px;
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .service-content-about h2::after {
+    content: ""; /* Adiciona conteúdo ao pseudo-elemento */
+    position: absolute; /* Define posição absoluta para o pseudo-elemento */
+    bottom: -5px; /* Posiciona o sublinhado abaixo do texto */
+    left: 25px; /* Alinha o sublinhado com o início do texto */
+    width: 60px; /* Largura do sublinhado */
+    height: 3px; /* Altura do sublinhado */
+    background-color: #000; /* Cor do sublinhado (pode ser ajustada conforme necessário) */
+  }
+  .service-content h2 {
+    margin-bottom: 10px;
+    margin-top: 0px;
+  }
+}

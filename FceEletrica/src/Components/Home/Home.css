@@ -1,0 +1,158 @@
+.hero {
+  background-image: url("../../assets/CNAEletricistaHome.jpg");
+
+  min-height: 900px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*Styles Button*/
+.btn-container {
+  margin-right: 10px;
+}
+.btn_services {
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  background-color: #fcca17;
+
+  font-size: 16px; /* Adjust font size as needed */
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 20px; /* Adjust padding as needed */
+  margin: 10px; /* Space between buttons */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn_services:hover {
+  background-color: #d4ac0d; /* Darker yellow on hover */
+}
+.btn_contact {
+  cursor: pointer;
+  color: aliceblue;
+  font-size: 16px; /* Ajustar o tamanho da fonte conforme necessário */
+  font-weight: bold;
+  text-transform: uppercase; /* Tornar o texto em maiúsculas */
+  padding: 10px 20px; /* Ajustar o preenchimento conforme necessário */
+  margin: 10px; /* Espaço entre os botões */
+  border: 2px solid #f1c40f; /* Borda amarela */
+  background-color: transparent; /* Fundo transparente para começar */
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn_contact:hover {
+  background-color: #555;
+}
+/*Styles Button*/
+.content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: aliceblue;
+  padding: 20px;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.content h1 {
+  font-size: 56px;
+  font-weight: bolder;
+}
+
+.content p {
+  font-size: 22px;
+  margin: 15px 0;
+  max-width: 550px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+/* 
+.content a {
+  color: inherit;
+  text-decoration: none;
+  background-color: antiquewhite;
+  padding: 12px 24px;
+  font-size: 22px;
+  border-radius: 10px;
+}  ESSA ESTILIZAÇÃO, É APENAS SE FOR NECESSÁRIO IMPLEMENTAR UM BOTÃO*/
+
+/* .quadrado {
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 2px;
+
+  width: 100px;
+} */
+/* Home.css */
+/* .banner-img-container {
+  text-align: center;
+}
+.banner-img {
+  background-image: url("../../assets/CNAEletricistaHome.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+@media screen and (max-width: 992px) {
+  .banner-img {
+    width: 360px;
+  }
+} */
+
+/*For large devices*/
+
+@media screen and (max-width: 992px) {
+  .hero {
+    position: relative;
+    background-image: url("../../assets/CNAEletricistaHome.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: auto;
+  }
+  .content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 24rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .btn_services,
+  .btn_contact {
+    margin-top: 3rem;
+  }
+  .content h1 {
+    font-size: 30px;
+  }
+
+  .content p {
+    font-size: 15px;
+  }
+}

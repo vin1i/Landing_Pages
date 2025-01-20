@@ -1,0 +1,195 @@
+.card__container-contato {
+  display: flex;
+  gap: 20px; /* Espaçamento entre os card__contatos */
+  justify-content: center;
+}
+
+.card__contato {
+  flex-direction: row-reverse;
+  display: flex; /* Alteração para permitir o alinhamento flexível da imagem e informações */
+  max-width: 100%; /* Ajuste conforme necessário */
+  width: 100%;
+  overflow-x: hidden;
+  align-items: stretch;
+
+  /* Adicione sombra para destacar os card__contatos */
+}
+
+.contato__image {
+  border-radius: 5px;
+  overflow: hidden; /* Certifica-se de que a imagem não ultrapasse as bordas do card__contato */
+  width: 50%; /* Define que a imagem ocupa 50% do card__contato */
+  margin-right: -0.125rem; /*FAZ A BORDA LATERAL DA IMAGEM PASSAR DA TELA, PRA DAR UM ASPECTO MAIS BONITO E SUAVE NA IMAGEM*/
+}
+
+.banner-img {
+  width: 120%;
+  display: block;
+}
+.nav__icon-contato {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #000000;
+  font-size: 2.6rem;
+  margin: 1rem;
+  transition: color 0.3s ease;
+}
+
+.adress {
+  padding: 2rem;
+}
+.adress-p {
+  width: 50%;
+  text-align: center;
+}
+.nav__icon-contato:hover {
+  color: #f39c12;
+}
+.information-contato {
+  background-color: #ffffff;
+  flex-grow: 1; /* Ocupa o restante do espaço disponível ao lado da imagem */
+  padding: 60px; /* Espaçamento interno do conteúdo do card__contato */
+
+  width: 50%; /* Define quanto as informações ocupam 50% do card__contato */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Adicionado para garantir que os elementos se alinhem verticalmente */
+  color: #333333;
+}
+
+.information-contato h1 {
+  font-size: 5rem;
+  width: 450px;
+  margin-top: 2rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.h3_description {
+  padding: 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+.h3_number {
+  padding: 1rem;
+  font-weight: bolder;
+}
+.information-contato ul {
+  margin-top: 2rem;
+}
+
+.information-contato li {
+  margin-top: 2rem;
+  /* margin: 0; REMOVE AS MARGENS SE NECESSÁRIO */
+  font-size: 2rem;
+  width: 400px;
+  font-weight: bolder;
+}
+/*-------------------STYLE BUTTON----------------------------------*/
+.email {
+  color: #000000;
+  padding: 10px;
+}
+.email:hover {
+  color: #f1c40f;
+}
+.link__contato {
+  color: #ffffff;
+}
+
+/*-------------------STYLE BUTTON----------------------------------*/
+/*--------------------------------BREAKPOINTS-------------------------------------*/
+
+@media screen and (max-width: 1790px) {
+  .information-contato h1 {
+    font-size: 3rem;
+    width: 450px;
+    margin-top: -2rem;
+    font-weight: bolder;
+  }
+
+  .information-contato li {
+    /* margin-top: 0.8rem; */
+    margin: 0; /*REMOVE AS MARGENS SE NECESSÁRIO */
+    font-size: 2rem;
+    width: 400px;
+    font-weight: bolder;
+  }
+}
+@media screen and (max-width: 1093px) {
+  .information-contato h1 {
+    font-size: 2.3rem;
+    width: 450px;
+    margin-top: -2rem;
+    font-weight: bolder;
+  }
+
+  .information-contato li {
+    /* margin-top: 0.8rem; */
+    margin: 0; /* REMOVE AS MARGENS SE NECESSÁRIO*/
+    font-size: 1.5rem;
+    width: 400px;
+    font-weight: bolder;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .card__contato {
+    flex-direction: column;
+    text-align: center;
+    border: none;
+  }
+
+  .adress {
+    padding: 0;
+  }
+  .contato__image {
+    width: 100%;
+    border-radius: 5px;
+    margin: 0;
+  }
+  .banner-img {
+    width: 100%;
+    display: block;
+  }
+  .information-contato button {
+    width: 100%;
+    font-size: 1.5rem;
+    margin: auto;
+  }
+  .adress-p {
+    width: 100%;
+  }
+
+  .information-contato {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin-top: -1rem;
+    gap: 2rem;
+  }
+
+  .information-contato h1,
+  .information-contato li {
+    width: 100%;
+    max-width: none;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .information-contato h1,
+  .information-contato p {
+    width: 100%;
+  }
+
+  .information-contato h1 {
+    font-size: 2rem;
+  }
+
+  .information-contato li {
+    font-size: 1.5rem;
+  }
+}

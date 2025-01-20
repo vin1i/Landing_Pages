@@ -1,0 +1,116 @@
+/* Servicos.css */
+
+.servicos-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.servicos-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  font-weight: bold;
+}
+
+.servicos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.servico-item {
+  flex: 1 1 calc(33.333% - 60px); /* Three items per row with space between */
+  max-width: calc(30.333% - 60px);
+
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.servico-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.servico-description {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.container_btn {
+  padding: 50px;
+}
+
+.whatsapp-button {
+  font-family: var(--body-font);
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: transform 0.3s, background-color 0.1s;
+  cursor: pointer;
+}
+
+.whatsapp-button a {
+  color: black;
+}
+
+.icon_whats {
+  margin-bottom: -3px;
+  font-size: 2.3rem;
+  color: black;
+}
+
+.whatsapp-button:hover {
+  background-color: #e6b800;
+  transform: scale(1.05);
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+}
+
+@media screen and (max-width: 992px) {
+  .servico-item {
+    flex: 1 1 calc(40.333% - 20px);
+    max-width: calc(45.333% - 10px);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .servicos-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .servico-description {
+    font-size: 1.2rem;
+  }
+
+  .servico-item {
+    flex: 1 1 calc(40.333% - 20px); /* Three items per row with space between */
+    max-width: calc(45.333% - 10px);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .servicos-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+}

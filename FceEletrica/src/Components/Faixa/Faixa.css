@@ -1,0 +1,97 @@
+.section__description {
+  background-color: #fcca17;
+  padding: 5rem;
+  width: 100%;
+  border-radius: 5px;
+  color: #000000;
+  font-family: var(--body-font);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; /* Centraliza horizontalmente */
+}
+
+.text__description {
+  position: relative; /* Torna o posicionamento do pseudo-elemento relativo a este elemento */
+  margin-bottom: var(--mb-1);
+  color: #000000;
+  font-weight: bold;
+  font-size: 4rem;
+  text-align: center;
+  margin-right: 5rem; /* Distância do botão */
+}
+
+.text__description::before {
+  content: ""; /* Adiciona conteúdo ao pseudo-elemento */
+  position: absolute; /* Define posição absoluta para o pseudo-elemento */
+  bottom: -5px; /* Posiciona o sublinhado abaixo do texto */
+  left: 50%; /* Alinha o sublinhado com o centro do texto */
+  width: 250px; /* Largura do sublinhado */
+  height: 3px; /* Altura do sublinhado */
+  background-color: #000; /* Cor do sublinhado (pode ser ajustada conforme necessário) */
+  transform: translateX(-50%); /* Centraliza horizontalmente o sublinhado */
+}
+
+.btn__faixa {
+  font-family: var(--body-font);
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #020202;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 2px solid #fafafa;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+
+  transition: transform 0.3s, background-color 0.1s;
+}
+
+.btn__contact-img {
+  width: 20px;
+}
+.btn__faixa {
+  display: flex;
+  align-items: center;
+}
+
+.btn__contact-text {
+  margin-right: 8px;
+}
+
+.nav__icon-faixa {
+  margin-bottom: -3px;
+  font-size: 2.3rem;
+  color: black;
+}
+.btn__faixa:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+}
+
+/*-------------------------BREAKPOINTS------------------------------------*/
+@media screen and (max-width: 768px) {
+  .text__description {
+    font-size: 3rem; /* Ajuste o tamanho do texto para telas menores */
+    margin-right: 2rem; /* Reduza a distância do botão */
+  }
+
+  .text__description::before {
+    width: 150px; /* Reduza a largura do sublinhado */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .text__description {
+    font-size: 2rem; /* Ajuste o tamanho do texto para telas ainda menores */
+    margin-right: 1rem; /* Reduza ainda mais a distância do botão */
+  }
+
+  .text__description::before {
+    width: 100px; /* Reduza mais a largura do sublinhado */
+  }
+}
