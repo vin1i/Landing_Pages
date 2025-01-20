@@ -1,0 +1,525 @@
+body {
+  background-image: url("../../assets/Imagens/Fundo01.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+}
+
+.nav-bar {
+  font-family: "AgencyR", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 6rem;
+}
+.logo-img-container {
+  width: 390px;
+  padding-right: 60px;
+}
+
+.logo-img {
+  margin-left: 300px;
+
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  color: aliceblue;
+}
+
+.nav-list {
+  text-transform: uppercase;
+  display: flex;
+
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-list ul {
+  display: flex;
+  justify-content: center;
+  margin-left: 400px;
+}
+
+.nav-item {
+  margin: 0 15px;
+  font-size: var(--h2-font-size);
+}
+
+.nav-link {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: var(--h3-font-size);
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--title-color-dark);
+}
+
+.nav__icon {
+  top: 2rem;
+}
+
+.tel-button {
+  margin-top: 35px;
+  margin-right: 16.5rem;
+}
+.tel-button button {
+  font-size: var(--normal-font-size);
+  border: none;
+  background-color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-right: 4.5rem;
+  border: none;
+  border-radius: 2px;
+
+  font-family: "AvenirLT Std-Book", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.1s;
+}
+
+.tel-button button:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+}
+.tel-button button a {
+  text-decoration: none;
+
+  text-decoration: none;
+
+  color: #000;
+}
+
+.logotoggle-img {
+  display: none;
+}
+.nav__icon-header {
+  height: 14px;
+  margin-top: 2px;
+}
+
+/*-------------------------------------------BREAKPOINTS-----------------------------------------*/
+
+/*For large devices*/
+
+@media screen and (max-width: 1634px) {
+  .logo-img-container {
+    width: 290px;
+    padding-right: 60px;
+  }
+
+  .logo-img {
+    width: 200px;
+    margin-left: -4rem;
+    margin-top: 20px;
+  }
+  .tel-button {
+    margin-top: 22px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 1434px) {
+  .logo-img-container {
+    width: 290px;
+    padding-right: 60px;
+  }
+
+  .logo-img {
+    width: 200px;
+    margin-left: -4rem;
+    margin-top: 20px;
+  }
+  .tel-button {
+    margin-top: 30px;
+    margin-right: 0;
+  }
+  .nav-list ul {
+    display: flex;
+    justify-content: center;
+    margin-left: 300px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 1380px) {
+  body {
+    height: 800px;
+  }
+  .nav-list ul {
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .logo-img-container {
+    width: 290px;
+    padding-right: 60px;
+  }
+
+  .logo-img {
+    width: 250px;
+    margin-left: 6rem;
+    margin-top: 20px;
+  }
+
+  .tel-button {
+    margin-top: 31px;
+  }
+  .tel-button button {
+    font-size: var(--normal-font-size);
+    border: none;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-right: 2.5rem;
+    margin-top: 0.3rem;
+    border: none;
+    border-radius: 2px;
+
+    font-family: "AvenirLT Std-Book", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.1s;
+  }
+  .nav-list ul {
+    display: flex;
+    justify-content: center;
+    margin-left: 150px;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 1130px) {
+  .logo-img-container {
+    width: 290px;
+    padding-right: 60px;
+  }
+
+  .tel-button {
+    margin-top: 28px;
+    margin-right: -2rem;
+  }
+}
+@media screen and (max-width: 1098px) {
+  .logo-img-container {
+    width: 290px;
+    padding-right: 60px;
+  }
+
+  .tel-button {
+    margin-top: 28px;
+    margin-right: -9rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header__container {
+    margin-left: -8rem;
+  }
+  .logo-img-container {
+    width: 290px;
+    padding-right: 60px;
+  }
+
+  .tel-button {
+    margin-top: 28px;
+    margin-right: -4rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  body {
+    height: 600px;
+  }
+  .logo-img-container {
+    width: 290px;
+    padding-right: 60px;
+  }
+  .tel-button {
+    margin-top: 26px;
+    left: 2rem;
+    margin-right: -4rem;
+  }
+  .logo-img {
+    width: 200px;
+    margin-left: 6.4rem;
+    margin-top: 20px;
+  }
+
+  .nav-list ul {
+    display: flex;
+    justify-content: center;
+    margin-left: 80px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 946px) {
+  body {
+    height: 600px;
+  }
+  .logo-img-container {
+    width: 290px;
+    padding-right: 60px;
+  }
+  .tel-button {
+    margin-top: 26px;
+    left: 2rem;
+    margin-right: -4rem;
+  }
+  .logo-img {
+    width: 200px;
+
+    margin-top: 20px;
+  }
+
+  .nav-list ul {
+    display: flex;
+    justify-content: center;
+    margin-left: -100px;
+    margin-top: 10px;
+  }
+}
+
+/*For medium devices*/
+@media screen and (max-width: 834px) {
+  .nav-bar {
+    padding: 1.5rem 4rem;
+  }
+  .nav-list ul {
+    margin-left: 0;
+  }
+  .logo-img {
+    width: 200px;
+    margin-left: 5rem;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .nav-list ul {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .nav-list ul {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    height: 500px;
+  }
+  .nav-bar {
+    padding: 1.5rem 4rem;
+  }
+
+  .nav-list ul {
+    margin-left: -139px;
+  }
+
+  .logo-img {
+    width: 200px;
+    margin-left: 5rem;
+    margin-top: 20px;
+  }
+
+  .nav-list ul {
+    display: flex;
+    justify-content: center;
+    margin-left: -80px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 754px) {
+  body {
+    height: 500px;
+  }
+  .nav-bar {
+    padding: 1.5rem 4rem;
+  }
+
+  .nav-list ul {
+    margin-left: -139px;
+  }
+
+  .logo-img-container {
+    width: 290px;
+    padding-right: 60px;
+  }
+
+  x .tel-button {
+    display: none;
+  }
+  .nav-list ul {
+    display: flex;
+    justify-content: center;
+    margin-left: -50px;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 688px) {
+  .nav-list ul {
+    margin-left: -280px;
+  }
+
+  .logotoggle-img {
+    display: initial;
+    width: 90px;
+    margin-left: -2rem;
+  }
+
+  .nav-list ul {
+    margin-left: -280px;
+    margin-top: -5rem;
+  }
+  .tel-button {
+    display: none;
+  }
+}
+@media screen and (max-width: 624px) {
+  .nav-list ul {
+    margin-left: -280px;
+    margin-top: 0;
+  }
+  .logo-img {
+    display: none;
+  }
+  .logotoggle-img {
+    display: initial;
+    width: 90px;
+    margin-left: 5rem;
+  }
+  .tel-button {
+    display: none;
+  }
+}
+@media screen and (max-width: 578px) {
+  .nav-list ul {
+    margin-left: -280px;
+  }
+  .logo-img {
+    display: none;
+  }
+  .logotoggle-img {
+    display: initial;
+    width: 90px;
+    margin-left: 4.5rem;
+  }
+  .tel-button {
+    display: none;
+  }
+}
+
+/*For small devices*/
+@media screen and (max-width: 577px) {
+  .nav-list ul {
+    margin-left: -100px;
+    width: max-content;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .logotoggle-img {
+    display: initial;
+    width: 90px;
+    margin-left: 6rem;
+  }
+  .nav-list ul {
+    margin-left: 100px;
+    width: max-content;
+  }
+}
+@media screen and (max-width: 440px) {
+  body {
+    height: 600px;
+  } /*-------------------------------------------------*/
+  .nav-list ul {
+    margin-left: -200px;
+    width: max-content;
+  }
+
+  .logotoggle-img {
+    display: initial;
+    width: 80px;
+    margin-left: -3.7rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  body {
+    height: 600px;
+  } /*-------------------------------------------------*/
+  .nav-list ul {
+    margin-left: -80px;
+    width: max-content;
+  }
+
+  .logotoggle-img {
+    display: initial;
+    width: 80px;
+    margin-left: 4.7rem;
+  }
+}
+@media screen and (max-width: 412px) {
+  .logotoggle-img {
+    display: initial;
+    width: 80px;
+    margin-left: 4.7rem;
+  }
+  .nav-list ul {
+    margin-left: -100px;
+    width: max-content;
+  }
+}
+@media screen and (max-width: 410px) {
+  .nav-list ul {
+    margin-left: -240px;
+    width: max-content;
+  }
+}
+@media screen and (max-width: 396px) {
+  .nav-list ul {
+    margin-left: -240px;
+    width: max-content;
+  }
+}
+@media screen and (max-width: 393px) {
+  .nav-list ul {
+    margin-left: -100px;
+    width: max-content;
+  }
+}
+@media screen and (max-width: 375px) {
+  .nav-list ul {
+    margin-left: -120px;
+    width: max-content;
+  }
+}
+@media screen and (max-width: 375px) {
+  .nav-list ul {
+    margin-left: -125px;
+    width: max-content;
+  }
+}
+@media screen and (max-width: 350px) {
+  .nav-list ul {
+    margin-left: -160px;
+  }
+
+  .logotoggle-img {
+    display: initial;
+    width: 50px;
+    margin-left: 4.8rem;
+  }
+}

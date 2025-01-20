@@ -1,0 +1,245 @@
+/* body {
+  overflow-x: hidden;
+} */
+.text__description {
+  width: 50%;
+  left: 8rem;
+  margin-bottom: var(--mb-1);
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.9rem;
+  position: relative;
+  padding-left: 4rem;
+}
+
+.text__description ::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 150%;
+  background-color: rgb(255, 253, 253);
+
+  left: 3rem;
+  top: -1.2rem;
+}
+/* .text__description {
+  width: 50%;
+  left: 8rem;
+  margin-bottom: var(--mb-1);
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2.9rem;
+  position: relative;
+  padding-left: 4rem;
+}
+
+.text__description ::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 150%;
+  background-color: rgb(255, 253, 253);
+
+  left: 3rem;
+  top: -1.2rem;
+} */
+
+.section__description {
+  background-color: #3fa2cb;
+  padding: 5rem;
+  width: 100%;
+  border-radius: 5px;
+
+  color: aliceblue;
+  font-family: "Corbel", sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.btn__contact-img {
+  width: 20px;
+}
+.btn__contact {
+  display: flex;
+  align-items: center;
+}
+
+.btn__contact-text {
+  margin-right: 8px;
+}
+
+.btn__contact {
+  border: none;
+  background: none;
+  display: flex;
+  color: black;
+  width: 100%;
+  padding: 10px;
+  position: relative;
+  right: 10rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  font-size: var(--h3-font-size);
+  font-family: "AvenirLT Std-Book", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.1s;
+}
+.nav__icon-contact {
+  height: 28px;
+}
+.btn__contact:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+}
+
+/*-------------------------------------------------BREAKPOINTS------------------------------------------------*/
+@media screen and (max-width: 1400px) {
+  .text__description ::before {
+    height: 120%;
+  }
+  .btn__contact {
+    position: static;
+  }
+  .text__description {
+    width: 50%;
+    left: 8rem;
+    margin-bottom: var(--mb-1);
+    color: #ffffff;
+    font-weight: bold;
+
+    position: relative;
+    padding-left: 4rem;
+  }
+
+  .text__description ::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 150%;
+    background-color: rgb(255, 253, 253);
+
+    left: 3rem;
+    top: -1.2rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .section__description {
+    padding: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 4rem;
+  }
+  .btn__contact-img {
+    display: none;
+  }
+  .text__description ::before {
+    content: none;
+  }
+  .text__description {
+    width: 100%;
+    top: 0.4rem;
+    left: -1rem;
+    margin-bottom: var(--mb-2);
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 0.8rem;
+    position: relative;
+    padding-left: 1rem;
+  }
+
+  .btn__contact {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    width: 120px;
+    padding: 8px;
+    font-size: var(--smaller-font-size);
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .nav__icon-contact {
+    height: 30px;
+  }
+  .btn__contact {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    width: 120px;
+    padding: 11px;
+    font-size: var(--smaller-font-size);
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .section__description {
+    padding: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 4rem;
+  }
+
+  .btn__contact-img {
+    display: none;
+  }
+  .text__description ::before {
+    content: none;
+  }
+  .text__description {
+    width: 100%;
+    top: 0.4rem;
+    left: -1rem;
+    margin-bottom: var(--mb-2);
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 0.8rem;
+    position: relative;
+    padding-left: 1rem;
+  }
+
+  .btn__contact {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    width: 120px;
+    padding: 8px;
+    font-size: var(--smaller-font-size);
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .section__description {
+    text-align: center;
+    width: 100%;
+    border-radius: 5px;
+    flex-direction: column;
+  }
+  .text__description ::before {
+    content: none;
+  }
+  .text__description {
+    width: 100%;
+    left: -0.7rem;
+    margin-bottom: var(--mb-3);
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: relative;
+    padding-left: 1rem;
+  }
+  .nav__icon-contact {
+    height: 30px;
+  }
+  .btn__contact {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    width: 120px;
+    padding: 11px;
+    font-size: var(--smaller-font-size);
+  }
+}
