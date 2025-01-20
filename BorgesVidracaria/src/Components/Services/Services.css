@@ -1,0 +1,326 @@
+/* .section__banner {
+background-image: url(../../assets/img/VBBORGES4.png);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 900px;
+  border-bottom-left-radius: 20% 15px;
+  border-bottom-right-radius: 20% 15px;
+  border-top-left-radius: 20% 15px;
+  border-top-right-radius: 20% 15px;
+} */
+
+.card__container {
+  display: flex;
+  gap: 20px; /* Espaçamento entre os card__services */
+  justify-content: center;
+}
+
+.card__service {
+  display: flex; /* Alteração para permitir o alinhamento flexível da imagem e informações */
+  max-width: 1220px; /* Ajuste conforme necessário */
+  width: 100%;
+
+  /* Adicione uma borda para destacar os card__services */
+  /* Adicione sombra para destacar os card__services */
+}
+
+.service__image {
+  overflow: hidden; /* Certifica-se de que a imagem não ultrapasse as bordas do card__service */
+  width: 40%; /* Define que a imagem ocupa 50% do card__service */
+  margin: auto; /*FAZ A BORDA LATERAL DA IMAGEM PASSAR DA TELA, PRA DAR UM ASPECTO MAIS BONITO E SUAVE NA IMAGEM*/
+}
+
+.secondary-img {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: block;
+}
+
+.information-service {
+  background-color: #ffffff;
+  flex-grow: 1; /* Ocupa o restante do espaço disponível ao lado da imagem */
+  /* Espaçamento interno do conteúdo do card__service */
+
+  width: 50%; /* Define quanto as informações ocupam 50% do card__service */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column; /* Adicionado para garantir que os elementos se alinhem verticalmente */
+  color: #333333;
+}
+
+.information-service h1 {
+  color: black;
+  font-size: 5rem;
+  width: 450px;
+  margin-top: 2rem;
+  font-weight: bolder;
+  margin-left: 0.8rem;
+}
+
+.title__services {
+  position: relative;
+  color: black;
+}
+.title__services::before {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 2px;
+  background-color: #37a2ca;
+  left: 0;
+  top: 90%;
+  transform: translateY(-50%);
+}
+.information-service p {
+  width: 100%;
+  padding: 1rem;
+}
+
+/*.information-service li {
+  margin-top: 1.5rem;
+   margin: 0; REMOVE AS MARGENS SE NECESSÁRIO 
+  font-size: 2rem;
+  width: 450px;
+  font-weight: bolder;
+}*/
+/*-------------------STYLE BUTTON----------------------------------*/
+/* Estilos adicionados para o botão */
+.information-service button {
+  margin-top: 30px; /* Espaçamento entre o parágrafo e o botão */
+  padding: 10px 15px; /* Adapte conforme necessário */
+  background-color: #ffd83d; /* Cor de fundo do botão */
+  color: white; /* Cor do texto do botão */
+  font-size: 2rem; /* Tamanho do texto do botão */
+  border-radius: 10px;
+  font-weight: bolder;
+  border: none; /* Remover a borda padrão do botão */
+  cursor: pointer;
+  max-width: 170px; /* Largura máxima do botão */
+  width: 100%;
+  transition: transform 0.3s, background-color 0.1s;
+}
+
+.information-service button:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+}
+/*-------------------STYLE BUTTON----------------------------------*/
+/*--------------------------------BREAKPOINTS-------------------------------------*/
+
+@media screen and (max-width: 1790px) {
+  .information-service h1 {
+    font-size: 3rem;
+    width: 450px;
+    margin-top: -2rem;
+    font-weight: bolder;
+  }
+
+  .title__services::before {
+    width: 30%;
+
+    left: auto;
+  }
+}
+@media screen and (max-width: 1093px) {
+  .information-service h1 {
+    font-size: 2.3rem;
+    width: 450px;
+    margin-top: -2rem;
+    font-weight: bolder;
+  }
+
+  .title__services::before {
+    width: 30%;
+
+    left: auto;
+  }
+  .secondary-img {
+    width: 100%;
+    margin-top: 2rem;
+    max-width: 350px;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .card__container {
+    margin-top: 5rem;
+    display: flex;
+    gap: 20px; /* Espaçamento entre os card__services */
+    justify-content: center;
+  }
+
+  .secondary-img {
+    width: 100%;
+    margin-top: 2rem;
+    max-width: 300px;
+    display: block;
+  }
+  .title__services {
+    text-align: flex-start;
+    position: relative;
+  }
+  .title__services::before {
+    width: 30%;
+
+    left: auto;
+  }
+
+  .information-service h1,
+  .information-service li {
+    width: 100%;
+    margin-left: 0;
+  }
+  .title__services::before {
+    top: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .title__services::before {
+    position: absolute;
+    content: "";
+    width: 34%;
+  }
+  .card__service {
+    flex-direction: column;
+    text-align: center;
+    border: none;
+  }
+
+  .service__image {
+    width: 100%;
+    border-radius: 5px;
+    margin: 0;
+  }
+  .secondary-img {
+    width: 100%;
+    margin-top: 0rem;
+    max-width: 400px;
+    display: block;
+  }
+  .information-service button {
+    width: 100%;
+    font-size: 1.5rem;
+    margin: auto;
+  }
+
+  .information-service {
+    width: 100%;
+    text-align: flex-start;
+    align-items: center;
+    margin-top: -1rem;
+    gap: 2rem;
+  }
+  .title__services {
+    text-align: center;
+    position: relative;
+  }
+  .title__services::before {
+    width: 12%;
+
+    left: auto;
+  }
+
+  .information-service h1,
+  .information-service li {
+    width: 100%;
+    text-align: flex-start;
+
+    max-width: none;
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 578px) {
+  .card__service {
+    flex-direction: column;
+    text-align: center;
+    border: none;
+  }
+
+  .service__image {
+    width: 100%;
+    border-radius: 5px;
+    margin: 0;
+  }
+  .secondary-img {
+    width: 100%;
+    margin-top: 0rem;
+    max-width: 300px;
+    display: block;
+  }
+  .information-service button {
+    width: 100%;
+    font-size: 1.5rem;
+    margin: auto;
+  }
+
+  .information-service {
+    width: 100%;
+    text-align: flex-start;
+    align-items: center;
+    margin-top: -1rem;
+    gap: 2rem;
+  }
+  .title__services {
+    text-align: center;
+    position: relative;
+  }
+  .title__services::before {
+    width: 12%;
+
+    left: auto;
+  }
+
+  .information-service h1,
+  .information-service li {
+    width: 100%;
+    text-align: flex-start;
+
+    max-width: none;
+    margin-top: 1rem;
+  }
+  .title__services::before {
+    position: absolute;
+    content: "";
+    width: 25%;
+  }
+}
+@media screen and (max-width: 430px) {
+  .title__services::before {
+    position: absolute;
+    content: "";
+    width: 30%;
+  }
+
+  .information-service li {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 390px) {
+  .title__services::before {
+    position: absolute;
+    content: "";
+    width: 30%;
+  }
+
+  .information-service li {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .information-service h1 {
+    width: 100%;
+  }
+
+  .information-service h1 {
+    font-size: 2rem;
+  }
+
+  .information-service li {
+    font-size: 1.5rem;
+  }
+}

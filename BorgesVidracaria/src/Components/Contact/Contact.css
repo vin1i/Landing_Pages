@@ -1,0 +1,258 @@
+.card__container-contact {
+  display: flex;
+  gap: 20px; /* Espaçamento entre os card__contacts */
+  justify-content: center;
+}
+
+.card__contact {
+  display: flex; /* Alteração para permitir o alinhamento flexível da imagem e informações */
+  max-width: 1920px; /* Ajuste conforme necessário */
+  width: 100%;
+  align-items: stretch;
+  /* Adicione uma borda para destacar os card__contacts */
+  /* Adicione sombra para destacar os card__contacts */
+}
+
+.contact__image {
+  overflow: hidden;
+  width: 50%;
+  margin-top: 4rem;
+  margin-left: 15%;
+}
+.title__contact {
+  position: relative;
+}
+.title__contact::before {
+  position: absolute;
+  content: "";
+  width: 25%;
+  height: 2px;
+  background-color: #37a2ca;
+  left: 1%;
+  top: 95%;
+  transform: translateY(-50%);
+}
+.banner-img {
+  width: 100%;
+  max-width: 650px;
+
+  margin: 0 auto;
+  display: block;
+}
+.icons-contact {
+  display: flex;
+}
+.nav__icon-contact {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 2.6rem;
+  margin: 0.8rem;
+  margin-top: 2rem;
+  transition: color 0.3s ease;
+}
+
+/* .adress {
+  } */
+.adress-p {
+  width: 50%;
+  margin-bottom: 2rem;
+  text-align: flex-start;
+}
+.email-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.email {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Remove a decoração padrão do link */
+}
+
+.icon-mail {
+  margin-right: 5px; /* Ajuste conforme necessário para o espaçamento entre o ícone e o texto */
+}
+.icon-mail:hover {
+  color: #37a2ca;
+}
+.nav__icon-contact:hover {
+  color: #37a2ca;
+}
+
+.phone:hover {
+  color: #37a2ca;
+}
+.information-contact {
+  background-color: #ffffff;
+  flex-grow: 1; /* Ocupa o restante do espaço disponível ao lado da imagem */
+  padding: 60px; /* Espaçamento interno do conteúdo do card__contact */
+
+  width: 50%; /* Define quanto as informações ocupam 50% do card__contact */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  flex-direction: column; /* Adicionado para garantir que os elementos se alinhem verticalmente */
+}
+
+.information-contact h1 {
+  font-size: 5rem;
+  width: 450px;
+  margin-top: 2rem;
+  font-weight: bolder;
+  text-align: flex-start;
+}
+
+.information-contact p {
+  margin-top: 2rem;
+
+  /* margin: 0; REMOVE AS MARGENS SE NECESSÁRIO */
+  font-size: 1.5rem;
+  text-align: flex-start;
+}
+
+/*-------------------STYLE BUTTON----------------------------------*/
+.email:hover {
+  color: #37a2ca;
+}
+.link__contact {
+  color: #ffffff;
+}
+.information-contact button {
+  font-family: "Poppins", sans-serif;
+  margin-top: 30px; /* Espaçamento entre o parágrafo e o botão */
+  padding: 10px 15px; /* Adapte conforme necessário */
+  background-color: #37a2ca; /* Cor de fundo do botão */
+  color: white; /* Cor do texto do botão */
+  font-size: 2rem; /* Tamanho do texto do botão */
+  border-radius: 20px;
+  font-weight: bolder;
+  border: none; /* Remover a borda padrão do botão */
+  cursor: pointer;
+  max-width: 170px; /* Largura máxima do botão */
+  width: 100%;
+  transition: transform 0.3s, background-color 0.1s;
+}
+
+.information-contact button:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+}
+/*-------------------STYLE BUTTON----------------------------------*/
+/*--------------------------------BREAKPOINTS-------------------------------------*/
+
+@media screen and (max-width: 1790px) {
+  .information-contact h1 {
+    font-size: 3rem;
+    width: 400px;
+    margin-top: -2rem;
+    font-weight: bolder;
+  }
+
+  .information-contact li {
+    /* margin-top: 0.8rem; */
+    margin: 0; /*REMOVE AS MARGENS SE NECESSÁRIO */
+    font-size: 2rem;
+    width: 400px;
+    font-weight: bolder;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .title__contact::before {
+    position: absolute;
+    content: "";
+    width: 10%;
+    left: auto;
+  }
+  .card__contact {
+    flex-direction: column;
+    text-align: center;
+    border: none;
+  }
+
+  .adress {
+    padding: 0;
+  }
+  .banner-img {
+    width: 100%;
+    max-width: auto; /*Mudar aqui o tamanho da imagem caso necessário!!*/
+
+    margin-top: 5rem;
+    display: block;
+  }
+  .contact__image {
+    width: 100%;
+    border-radius: 5px;
+    margin: 0;
+  }
+
+  .information-contact button {
+    width: 100%;
+    font-size: 1.5rem;
+    margin: auto;
+  }
+  .adress-p {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .email {
+    margin-bottom: 0.5rem;
+  }
+
+  .information-contact {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin-top: -1rem;
+    gap: 2rem;
+  }
+
+  .information-contact h1,
+  .information-contact li {
+    width: 100%;
+    max-width: none;
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .title__contact::before {
+    position: absolute;
+    content: "";
+    width: 10%;
+    left: auto;
+  }
+}
+@media screen and (max-width: 578px) {
+  .title__contact::before {
+    position: absolute;
+    content: "";
+    width: 25%;
+    left: auto;
+  }
+
+  .banner-img {
+    width: 100%;
+    max-width: 450px; /*Mudar aqui o tamanho da imagem caso necessário!!*/
+
+    margin-top: 5rem;
+    display: block;
+  }
+}
+@media screen and (max-width: 350px) {
+  .information-contact h1,
+  .information-contact p {
+    width: 100%;
+  }
+
+  .information-contact h1 {
+    font-size: 2rem;
+  }
+
+  .information-contact li {
+    font-size: 1.5rem;
+  }
+}
